@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+.idea
+.vscode/
+.env
+## local config for neovim
+.nvimrc
+.npmrc
+yarn.lock
