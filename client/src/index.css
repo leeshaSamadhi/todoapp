@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    background-color:rgb(246, 243, 243) ;
+    padding: 2px;
+    height: 800px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.todo-body{
+    background-color: rgb(104, 226, 189);
+    border-radius: 10px;
+    height: 200px;
+    margin: 3rem;
+    padding: 20px;
+
+}
+
+h1, h3, span{
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 8px;
+    text-align: center;
+   
+}
+
+.new-task{
+    box-shadow: 2px 2px 2px rgb(226, 221, 221);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    border-style: none;
+    color: rgb(89, 170, 146);
+    cursor: pointer;
+    font-weight: bold;
+    float: right;
+    margin-top:0;
+    padding: 5px;
+}
+
+
+.new-task:hover{
+    background-color: rgb(241, 240, 237);
+}
+
+.todo-container{
+    background-color: rgb(235, 231, 231);
+    border-radius: 3px;
+    margin: 2rem;
+    margin-top: 5rem;
+    padding: 20px;
+    width: 400px;
+}
+
+span{
+    color: rgb(89, 170, 146);
+}
+
+.todo-item{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    margin: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    position: relative;
+}
+
+.todo-item, .checkbox :hover{
+    opacity: .8;
+    cursor: pointer;
+
+}
+
+.checkbox{
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    border-radius: 999px;
+    background-color: rgb(218, 218, 228);
+}
+
+.todo-item.is-complete .checkbox{
+    background-color: rgb(89, 170, 146);
+}
+
+.todo-item.is-complete .text{
+    text-decoration: line-through;
+}
+
+.todo-item .delete-item{
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform: translateY(-50%);
+    /* display: flex; */
+    /* align-items: center; */
+    background-color: rgb(221, 49, 49);
+    cursor: pointer;
+    border-style: none;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.newtask-popup{
+    width: 30%;
+    background-color: rgb(235, 231, 231);
+    color: rgb(89, 170, 146);
+    box-shadow: 0px 3px 24px rgb(141, 135, 135);
+    border-radius: 4px;
+    padding: 30px;
+    position: fixed;
+    transform: translate(130%, -80%);
+}
+
+.close-popup{
+    background-color: rgb(218, 103, 103);
+    border-radius:50%;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%);
+    top: 16px;
+    right: 16px;
+    position: absolute;
+}
+
+.newtask-body h3{
+    font-family: sans-serif;
+    margin: 8px;
+    text-align: center;
+}
+
+.createtask-input{
+    border: none;
+    border-radius: 6px;
+    padding: 3px;
+    width: 50%;
+}
+
+.createtask-button{
+    box-shadow: 2px 2px 2px rgb(226, 221, 221);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    border-style: none;
+    color: rgb(89, 170, 146);
+    cursor: pointer;
+    font-weight: bold;
+    margin:10px;
+    padding: 5px;
+}
